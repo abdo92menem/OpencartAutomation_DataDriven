@@ -3,15 +3,17 @@
 	<groupId>com.opencart</groupId>
 	<artifactId>opencartAutomationWithDataDriven</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
+	<properties>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
+	</properties>
 	<dependencies>
 		<!-- Selenium Dependency-->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>4.10.0</version>
+			<version>4.13.0</version>
 		</dependency>
-
 		<!-- TestNG Dependency -->
 		<dependency>
 			<groupId>org.testng</groupId>
@@ -19,14 +21,12 @@
 			<version>7.7.1</version>
 			<scope>test</scope>
 		</dependency>
-		
 		<!-- Extent Reports -->
 		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
 			<version>5.0.9</version>
 		</dependency>
-		
 		<!-- ReportNg Dependecies -->
 		<dependency>
 			<groupId>org.uncommons</groupId>
@@ -34,63 +34,53 @@
 			<version>1.1.4</version>
 			<scope>test</scope>
 		</dependency>
-		
 		<dependency>
 			<groupId>com.google.inject</groupId>
 			<artifactId>guice</artifactId>
 			<version>5.1.0</version>
 		</dependency>
-		
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
 			<version>32.1.2-jre</version>
 		</dependency>
-		
 		<!-- Logging Dependencies - Log4j2 -->
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-api</artifactId>
 			<version>2.20.0</version>
 		</dependency>
-		
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-core</artifactId>
 			<version>2.20.0</version>
 		</dependency>
-
-		<!-- Dealing with Excel Files Dependencies -->		
+		<!-- Dealing with Excel Files Dependencies -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
 			<version>5.2.3</version>
 		</dependency>
-		
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
 			<version>5.2.3</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.dom4j</groupId>
 			<artifactId>dom4j</artifactId>
 			<version>2.1.4</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.apache.xmlbeans</groupId>
 			<artifactId>xmlbeans</artifactId>
 			<version>5.1.1</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml-schemas</artifactId>
 			<version>4.1.2</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -98,7 +88,6 @@
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
-	
 	<build>
 		<plugins>
 			<plugin>
@@ -113,5 +102,4 @@
 			</plugin>
 		</plugins>
 	</build>
-	
 </project>
