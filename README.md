@@ -14,3 +14,7 @@
  - Initializing Webdriver
  - Adding TestNg Plugin to Eclipse IDE
  - Convert project to TestNG project
+ 
+# 4th Lecture:
+ - Initializing loggers
+ - Adding Logging Messages

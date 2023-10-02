@@ -10,6 +10,7 @@ public class UserRegisteredSuccessfully extends TestBase {
 	@Test
 	public void userRegisteredSuccessfull() {
 		
+		logger.debug("Inside Rgister Test !!");
 		driver.findElement(By.cssSelector(or.getProperty("myAccountList"))).click();
 		try {
 			Thread.sleep(3000);
@@ -17,5 +18,7 @@ public class UserRegisteredSuccessfully extends TestBase {
 			
 			e.printStackTrace();
 		}
+		
+		logger.debug("Register Successfully Executed");
 	}
 }
